@@ -1,0 +1,178 @@
+<!Doctype html>
+
+<html>
+
+<style>
+.container{
+    width: 95%;
+    margin-left: 5%;
+}
+.headerlogo{
+    width: 95%;
+    height: 35px;
+    background-color: #FFEE58;
+}
+.logososmed{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.header{
+    height: 80px;
+	width: 95%;
+	background-color: #00B0FF;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;  
+    height: 60px;  
+}
+#inline{
+    margin-top: 20px;
+    margin-right: 20px; 
+}
+#inline li {
+    float: left;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#inline li a{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: black;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+#inline li a:hover{
+    background: #454d59;
+    color: white;
+}
+.navigasi{ 
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.navigasi #home a {
+    text-decoration: none;
+    color: black;
+}
+.event{
+    width: 95%;
+}
+.event #tabeltengah{
+    margin-left: 16%;
+}
+.event #gambar img{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.event #nav{
+    padding: 10px;    
+    
+}
+.event #navigasibawah{
+    margin-left: 45%;
+    text-align: center;
+}
+.event #nav a{
+    text-decoration: none;
+    color: black;
+}
+.event table a{
+    text-decoration: none;
+    color: black;
+}
+.container .event a #next{
+    margin-left: 15%;
+    text-decoration: none; 
+    color: blue;       
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+}
+</style>
+
+<head>
+    <title>Event</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerlogo">
+            <a href="https://www.youtube.com/user/Jemberkab"><img src="gambar/youtube.png" class="logososmed"></a>
+            <a href="https://www.instagram.com/humas_jember/"><img src="gambar/instagram.png" class="logososmed"></a>
+            <a href="https://www.facebook.com/jemberkab/"><img src="gambar/facebook.png" class="logososmed"></a>
+            <a href="https://twitter.com/Humas_Jember"><img src="gambar/twiter.png" class="logososmed"></a>
+        </div>
+        <div class="header">
+            <a href="index.html"><img src="gambar/logologoan.png" class="logo"></a>
+            <div style="float: right;">
+                <table style="padding: 50px;" >
+                    <ul id="inline">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="wisata.html">WISATA</a></li>
+                        <li><a href="event fix.html">EVENT</a></li>
+                        <li><a href="hotel.html">HOTEL</a></li>
+                        <li><a href="about us.html">ABOUT US</a></li>
+                    </ul>
+                    <!-- <ul id="inline">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">WISATA</a>
+                            <div class="dropdown-content">
+                                <a href="#">Wisata Alam</a>
+                                <a href="#">Wisata Budaya & Sejarah</a>
+                                <a href="#">Wisata Minat Khusus</a>
+                                <a href="#">Wisata Kuliner</a>
+                            </div>
+                        </li>
+                        <li><a href="Biodata.html">EVENT</a></li>
+                        <li><a href="Galery.html">HOTEL</a></li>
+                        <li><a href="Contact.html">ABOUT US</a></li>
+                    </ul>	 -->
+                </table>
+            </div>            
+        <div class="navigasi">
+            <table>
+                <tr >
+                    <th id="home"><a href="index.html">HOME ></a></th>
+                    <th>EVENT</th>
+                </tr>
+            </table>            
+        </div>
+        <div class="event">
+            <table id="tabeltengah">
+                <tr>
+                    <th id="gambar"><a href="event jfc.html"><img src="gambar/jfc.jpg"><br>Jember Fashion Carnaval</a></th>
+                    <th id="gambar"><a href=""><img src="gambar/tajemtra.jpg"><br>Gerak Jalan Tajemtra(Tanggul Jember Tradisional)</a></th>
+                </tr>            
+                <tr>
+                    <th id="gambar"><a href=""><img src="gambar/larung sesaji.jpg"><br>Festival Larung Sesaji</a></th>
+                    <th id="gambar"><a href=""><img src="gambar/festival petik laut.jpg"><br>Festival Petik Laut</a></th>
+                </tr>
+            </table>
+            <table id="navigasibawah">
+                <tr>                    
+                    <th id="nav"><a href="">1</a></th>
+                    <th id="nav"><a href="">2</a></th>
+                    <th id="nav"><a href="">3</a></th>                    
+                    <th id="nav"><a href="">4</a></th>
+                    <th id="nav"><a href="" id="next">next</a></th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p>@Copyright 2017 - Jemberin.kuy by Dinas Pariwisata Kabupaten Jember</p>
+        </div>
+    </div>
+</body>

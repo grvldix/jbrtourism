@@ -1,0 +1,233 @@
+<!Doctype html>
+
+<html>
+<script src="test formulir.js"></script>
+<style>
+.container{
+    width: 95%;
+    margin-left: 5%;
+}
+.headerlogo{
+    width: 95%;
+    height: 35px;
+    background-color: #FFEE58;
+}
+.logososmed{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.header{
+    height: 80px;
+	width: 95%;
+	background-color: #00B0FF;
+}
+.logo{
+    margin-top: 10px;
+    margin-left: 10px;  
+    height: 60px;  
+}
+#inline{
+    margin-top: 20px;
+    margin-right: 20px; 
+}
+#inline li {
+    float: left;
+    list-style: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#inline li a{
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: black;
+    font-variant: small-caps;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+#inline li a:hover{
+    background: #454d59;
+    color: white;
+}
+.navigasi{ 
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+.navigasi #home a {
+    text-decoration: none;
+    color: black;
+
+}
+.event{
+    width: 95%;
+}
+.event #tabeltengah{
+    margin-left: 16%;
+}
+.event #gambar img{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.event #nav{
+    padding: 10px;    
+    
+}
+.event #navigasibawah{
+    text-align: center;
+}
+.event #nav a{
+    text-decoration: none;
+    color: black;
+}
+.event #nav a #next{
+    text-decoration: none; 
+    color: blue;       
+}
+.pesanan {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 10%;
+    text-align: left;
+}
+.tabelpesanan{
+    margin-top: 100px;
+    padding-left: 10px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    font-size: 20px;
+}
+</style>
+
+<head>
+    <title>Booking</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerlogo">
+            <a href="https://www.youtube.com/user/Jemberkab"><img src="gambar/youtube.png" class="logososmed"></a>
+            <a href="https://www.instagram.com/humas_jember/"><img src="gambar/instagram.png" class="logososmed"></a>
+            <a href="https://www.facebook.com/jemberkab/"><img src="gambar/facebook.png" class="logososmed"></a>
+            <a href="https://twitter.com/Humas_Jember"><img src="gambar/twiter.png" class="logososmed"></a>
+        </div>
+        <div class="header">
+            <a href="index.html"><img src="gambar/logologoan.png" class="logo"></a>
+            <div style="float: right;">
+                <table style="padding: 50px;" >
+                    <ul id="inline">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="wisata.html">WISATA</a></li>
+                        <li><a href="event fix.html">EVENT</a></li>
+                        <li><a href="hotel.html">HOTEL</a></li>
+                        <li><a href="about us.html">ABOUT US</a></li>
+                    </ul>
+                </table>        
+            </div>
+        </div>
+        <div class="navigasi">
+            <table>
+                <tr >
+                    <th id="home"><a href="index.html">HOME ></a></th>
+                    <th id="home"><a href="hotel.html">HOTEL></a></th>
+                    <th id="home"><a href="hotel karunia.html">Hotel Karunia></a></th>                    
+                    <th>booking</th>
+                </tr>
+            </table>
+        </div>                        
+        <div class="pesanan">
+            <form name="pesanan">
+            <h1>Silahkan isi formulir booking hotel Anda</h1>
+            <table>
+                <tr>
+                    <th>Nama Depan</th>
+                    <th>: <input type="text" name="firstname" required></th>
+                </tr>
+                <tr>
+                    <th>Nama Belakang</th>
+                    <th>: <input type="text" name="lastname" required></th>
+                </tr>                
+                <tr>
+                    <th>Hotel Tujuan</th>
+                    <th>: <select name="hotel" required>                  
+                            <option>Aston
+                            <option>Karunia
+                            <option>Ebizz
+                            <option>Royal
+                        </select></th>
+                </tr>
+                <tr>
+                    <th>Tanggal Check-In</th>
+                    <th>: <input type="date" name="checkIn" required></th>
+                </tr>
+                <tr>
+                    <th>Tanggal Check-Out</th>
+                    <th>: <input type="date" name="checkOut" required></th>
+                </tr>
+                <tr>
+                    <th>Jenis Bed</th>
+                    <th>: <input type="radio" name="jenisBed" value="King Size"> King Size
+                        <br><input type="radio" name="jenisBed" value="Reguler Size"> Reguler Size</th>
+                </tr>
+                <tr>
+                    <th>No. HP</th>
+                    <th>: <input type="text" name="noHP" required></th>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <th>: <input type="email" name="email" required></th>
+                </tr>                
+            </table>
+            <input type="button" onclick="lanjutkan()"  value="Submit">
+            <input type="reset" value="Reset">
+            </form>
+        </div>
+            <!-- <form name="pesanan">
+                <pre>
+                    Nama Depan        :<input type="text" name="firstname"><br>
+                    Nama Belakang     :<input type="text" name="lastname"><br>
+                    Hotel Tujuan      :<select name="hotel">                  
+                        <option>Aston
+                        <option>Karunia
+                        <option>Ebizz
+                        <option>Royal
+                    </select><br>
+                    Tanggal Check-In  :<input type="date" name="checkIn"><br>
+                    Tanggal Check-Out : <input type="date" name="checkOut"><br>            
+                    Jenis Bed         :<input type="radio" name="jenisBed" value="King Size"> King Size
+                                       <input type="radio" name="jenisBed" value="Reguler Size"> Reguler Size<br>
+                    No. Hp            :<input type="text" name="noHP"><br>
+                    Email             :<input type="email" name="email"><br>
+                </pre>
+                <input type="button" onclick="lanjutkan()"  value="Submit">
+                <input type="reset" value="Reset">  
+            </form>             -->
+        
+        <div class="tabelpesanan">
+            <table id="tabelPesanan" >
+                <tr>
+                    <td>Nama Depan</td>
+                    <td>Nama Belakang</td>
+                    <td>Hotel Tujuan</td>
+                    <td>Tanggal Check-In</td>
+                    <td>Tanggal Check-Out</td>            
+                    <td>Jenis Bed</td>
+                    <td>No. HP</td>
+                    <td>Email</td>
+                </tr>
+            </table>  
+        </div>
+        <div class="footer">
+            <p>@Copyright 2017 - Jemberin.kuy by Dinas Pariwisata Kabupaten Jember</p>
+        </div>         
+    </div>
+</body>
